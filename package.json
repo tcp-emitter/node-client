@@ -1,0 +1,40 @@
+{
+  "name": "tcp-emitter-client",
+  "version": "1.0.0",
+  "description": "Client for TCP Emitter Server",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc -r -c conf.json && hs -c0 ./out",
+    "test": "standard && nyc --reporter=html mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcp-emitter/node-client.git"
+  },
+  "keywords": [
+    "Event",
+    "Emitter",
+    "TCP",
+    "Server",
+    "Client"
+  ],
+  "author": "Luca Tabone <taboneluca3@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcp-emitter/node-client/issues"
+  },
+  "homepage": "https://github.com/tcp-emitter/node-client#readme",
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "jsdoc": "^3.5.4",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "sinon": "^3.2.1",
+    "standard": "^10.0.3"
+  }
+}
